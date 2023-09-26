@@ -1,0 +1,101 @@
+@import './abstracts/variables';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+@import './includes/fonts';
+
+.social-links{
+    i:hover{
+        color: white !important;
+    }
+}
+.nav-item-a{
+    a:hover{
+        color: white !important;
+        border-bottom: 2px solid $dot;
+    }
+}
+.iconsec{ 
+ @include media-min-lg{
+        background-color:rgba(0, 0, 0, 0);
+        position: absolute;
+        margin-top: -10%;
+        top: 0;
+        right: 0;
+    }
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    a:hover{
+        color: red !important;
+    }
+}
+.buttn{
+   background-color: $buttnclr; 
+   &:hover{
+    border:1px solid white !important;
+    }
+}
+.about-border{
+    border-bottom: 3px solid $impact;
+}
+.imgcover{   
+    height: 100vh !important;
+    @include media-min-md{
+        height: 75vh !important;
+    }
+}
+.portfolio{
+    padding-left:0px;
+    padding-right: 0;
+    width: 100%;
+    @include media-min-md{
+        width: 23rem;
+    }
+    .zoom-img{
+        overflow: hidden;
+        img{
+            transition: all 2.0sec ease;}
+            img:hover{
+                transform: scale(1.2);
+            }        
+    }
+}
+.roundcirc{
+    width:50px ;
+    height:50px ;
+}
+.borderbusiness{
+    border: 3px solid $impact;
+}
+.carousel-indicators [data-bs-target]{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.price-hover{
+    a:hover{
+    background-color:$impact ;
+    color:white;
+    }
+}
+.faqaction{
+    background-color: white !important;
+    &:focus{
+        color: $impact;
+        border-color: white !important;
+        box-shadow:none !important;
+    }
+    &:active{
+        background-color: white !important;
+    }
+    &:visited{
+        border: none !important;
+    }
+}
+.footicon:hover{
+    border: 2px solid white !important;
+}

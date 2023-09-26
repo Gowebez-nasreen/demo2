@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.topbar{
+    background-color:$topbargreen ;
+}
+.header{
+    background-color: $impact;
+}
+.clricons{
+    background-color:$impact ;
+}
+.clr{
+    color: $icon;
+}
+.dot{
+   color: $dot;
+}
+.fontprimary{
+    font-family: $font-secondary;
+}
+.dropdownclr{
+   color:$topbargreen !important;
+}
+.cardbg{
+    background-color:$buttnclr ;
+}
+.cardfont{
+    font-size: 48px;
+}
+.cardtext{
+    font-size: 24px !important;
+}
+// .border-bottom{
+//    border-bottom:2px solid red ;
+// }
+.green{
+    color:$impact;
+}
+.ctsbtn:hover{
+    background-color:$buttnclr ;
+}
+.locclr{
+    background-color: $locclr;
+}
+.cirlclr{
+    background-color:$circle ;
+}
+
+.curousbottom{
+    background-color:$impact ;
+ }

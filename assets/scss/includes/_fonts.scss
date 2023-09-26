@@ -1,0 +1,21 @@
+.font1{
+    font-size: 18px !important;
+}
+.cardfont1{
+    font-size: 46px !important;
+}
+.footerfont{
+    font-size: 14px;
+}
+.blogfont{
+    font-size: 16px !important;
+}
+.teami{
+    font-size: 18px !important;
+}
+.font{
+    font-size: 12px !important;
+    @include media-min-sm{
+        font-size: 14px !important;
+    }
+}

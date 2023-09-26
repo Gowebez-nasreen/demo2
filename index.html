@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--======bootstrap link============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./public/css/style.min.css">
+</head>
+
+<body>
+    <!--======Section starts=========-->
+    <div class="topbar">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="container justify-content-lg-start justify-content-center">
+
+                <div>
+                    <a class="navbar-brand text font"><span><i class="fa-regular fa-envelope pe-1"
+                                style="color: #e3e3e3;"></i></span>contact@example.com</a>
+
+                    <a class="navbar-brand text font"><span><i class="fa-solid fa-mobile-screen-button pe-2"
+                                style="color: #e3e3e3;"></i></span>+1 5589 55488 55</a>
+                </div>
+            </div>
+            <div class="d-none d-lg-block ">
+                <ul class="navbar-nav flex-row  d-md-flex align-items-center justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="fab fa-twitter font"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-brands fa-facebook font"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="fab fa-instagram font"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-linkedin font"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--======Section Ends=========-->
+
+    <!--============Header Section Starts===============-->
+    <div class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid container-lg">
+                <a class="navbar-brand text-white fs-2 fw-bold" href="#">Impact<span class=" dot fs-1">.</span></a>
+                <div>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header header">
+                            <h5 id="offcanvasRightLabel"></h5>
+                            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body header fs-6">
+
+                            <ul class="navbar-nav float-end">
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-primary text-white  fw-bold" aria-current="page"
+                                        href="#">Home</a>
+                                </li>
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page"
+                                        href="#">About</a>
+                                </li>
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page"
+                                        href="#">Services
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page"
+                                        href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page" href="#">Team
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-a me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page" href="#">Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-a dropdown me-3">
+                                    <a class="nav-link dropdown-toggle text-white-50 fw-bold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Drop Down
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dropdownclr fw-bold" href="#">Drop Down 1</a></li>
+                                        <li class="nav-item nav-item-a dropend">
+                                            <a class="nav-link dropdown-toggle dropdownclr fw-bold ps-3 show-none"
+                                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Deep Drop Down
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item dropdownclr fw-bold" href="#">Deep Drop Down
+                                                        1</a></li>
+                                                <li><a class="dropdown-item dropdownclr fw-bold" href="#">Deep Drop Down
+                                                        2</a></li>
+                                                <li><a class="dropdown-item dropdownclr fw-bold" href="#">Deep Drop Down
+                                                        3</a></li>
+                                                <li><a class="dropdown-item dropdownclr fw-bold" href="#">Deep Drop Down
+                                                        4</a></li>
+                                                <li><a class="dropdown-item dropdownclr fw-bold" href="#">Deep Drop Down
+                                                        5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item dropdownclr fw-bold" href="#">Drop Down 2</a></li>
+                                        <li><a class="dropdown-item dropdownclr fw-bold" href="#">Drop Down 3</a></li>
+                                        <li><a class="dropdown-item dropdownclr  fw-bold" href="#">Drop Down 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link active text-white-50 fw-bold" aria-current="page"
+                                        href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--============Header Section Ends===============-->
+
+    <!--=========Bannar section starts==================-->
+    <div class="header banner ">
+        <div class=" container pb-5">
+            <div class="row  d-flex py-3 ">
+                <div
+                    class="pb-5 my-lg-5 col-lg-6 order-2 order-lg-1 text-center text-lg-start d-flex justify-content-center flex-column ">
+                    <h1 class="text-white fw-bold display-4 fontprimary mb-2">Welcome to Impact</h1>
+                    <p class=" text-white-50 my-4 font1">Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+                        eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <div class="d-flex justify-content-center pe-3 justify-content-lg-start">
+                        <button
+                            class="btn buttn text-white rounded-5 header btn-shadow-5  fs-6 ps-5 pe-5 pt-2 pb-2 fw-semi-bold"
+                            type="submit">Get Started</button>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                            class=" d-flex fs-6 fw-bold align-items-center ps-3  text-decoration-none text-white"><i
+                                class="fa-regular fa-circle-play text-white-50 fs-2 pe-3 hover-overlay "></i><span>Watch
+                                Video</span></a>
+
+                    </div>
+                </div>
+                <div class="my-lg-5 col-lg-6 order-1 order-lg-2 pb-5">
+                    <img src="/public/images/hero-img.svg" class="img-fluid" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--===========icon section=============-->
+    <div class="position-relative iconsec clricons">
+        <div class="container mt-lg-2 ">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-12 mt-5 mt-xl-0">
+                    <div class="card cardbg">
+                        <div class="card-body text-center m-3 pt-5 pb-5">
+                            <i class="fa-solid fa-tv cardfont text-white-50 pb-4"></i>
+                            <a href="#" class="nav-link cardtext fw-bold text-white">Lorem Ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mt-5 mt-xl-0">
+                    <div class="card cardbg ">
+                        <div class="card-body text-center m-3 pt-5 pb-5">
+
+                            <i class="fa-regular fa-gem cardfont text-white-50 pb-4"></i>
+
+                            <a href="#" class="nav-link cardtext fw-bold text-white">Sed perspiciatis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mt-5 mt-xl-0 ">
+                    <div class="card cardbg ">
+                        <div class="card-body text-center m-3 pt-5 pb-5">
+                            <i class="fa-regular fa-location-dot cardfont text-white-50 pb-4"></i>
+                            <a href="#" class="nav-link cardtext fw-bold text-white">Magni Dolores</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mt-5 mt-xl-0">
+                    <div class="card cardbg ">
+                        <div class="card-body text-center m-3 pt-5 pb-5">
+                            <i class="fa-regular fa-square cardfont text-white-50 pb-4"></i>
+                            <a href="#" class="nav-link cardtext fw-bold text-white">Nemo Enim</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========Bannar section endts==================-->
+
+    <!--===========About section starts=============-->
+    <section class="about mt-5">
+        <div class="container mt-5">
+            <div class="container justify-content-center">
+                <h2 class="text-center mb-5">Ab<span class="about-border pb-3">out</span> Us</h2>
+                <p class="text-muted fs-6 text-center">Aperiam dolorum et et wuia molestias qui eveniet numquam nihil
+                    porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+            </div>
+            <div class="row mt-5 ">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold ">Voluptatem dignissimos provident quasi corporis</h3>
+                    <img src="/public/images/about.jpg" class="img-fluid rounded-4 mb-4 " alt="">
+                    <p class="fs-6">Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et.
+                        Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur
+                        fugiat voluptas ea.</p>
+                    <p class="fs-6">Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil
+                        vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam
+                        qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed
+                        ut omnis beatae neque deleniti repellendus.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua.
+                        </p>
+                        <ul class="list-unstyled ">
+                            <li><i class="fa-solid fa-circle-check mb-3" style="color: rgb(0 141 125);"></i> Ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="fa-solid fa-circle-check mb-3" style="color: rgb(0 141 125);"></i> Duis aute
+                                irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="fa-solid fa-circle-check " style="color: rgb(0 141 125);"></i> Ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                        </ul>
+
+                        <p class="fs-6">
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident
+                        </p>
+
+
+
+                        <div class="position-relative mt-4">
+
+                            <img src="/public/images/about-2.jpg" class="img-fluid card-img rounded-4 position-relative"
+                                alt="">
+
+                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                                class=" card-img-overlay text-center text-success fs-1 d-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-circle-play fa-beat-fade"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <!--===========About section ends=============-->
+
+    <!--===============brand section starts=============-->
+    <div class="d-none d-lg-block mt-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active px-5">
+                    <div class="row px-5">
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-1.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-2.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-3.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-4.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-5.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-6.png" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item px-5">
+                    <div class="row px-5">
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-2.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-3.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-4.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-5.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-6.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-7.png" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item px-5">
+                    <div class="row px-5">
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-3.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-4.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-5.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-6.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-7.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-8.png" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item px-5">
+                    <div class="row px-5">
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-4.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-5.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-6.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-7.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-8.png" class="w-50" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="/public/images/clients/client-1.png" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-block d-lg-none mt-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-2.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-3.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-4.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-5.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-6.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-7.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-7.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-8.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="carousel-item px-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-8.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/clients/client-1.png" class="img-fluid" alt="">
+                        </div>                        
+                    </div>
+                </div>
+                
+               
+                
+            </div>
+        </div>
+    </div>
+    <!--===============brand section ends=============-->
+
+    <!--======================number section starts====================-->
+    <div >  
+        <div class="container mt-5" >    
+          <div class="row ">    
+            <div class="col-lg-6 mt-5  ">    
+              <img src="/public/images/Untitled_design-removebg-preview.png" alt="" class="img-fluid border-3 border-bottom mb-5">    
+            </div>    
+            <div class="col-lg-6 d-flex justify-content-center flex-column">    
+              <div class="d-flex border-bottom mb-3 mt-2">    
+                <h2 class="display-6 fw-bold  green  pe-3">232</h2> 
+                <div class="d-flex justify-content-center align-items-center">    
+                  <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>    
+                </div>    
+              </div>    
+              <div class="d-flex border-bottom mb-3 mt-2">    
+                <h2 class="display-6 fw-bold mb-2 mt-2 green pe-3">521</h2>    
+                <div class="d-flex justify-content-center align-items-center">
+                      <p class=""><strong>Projects</strong> adipisci atque cum quia aut</p>
+                </div>      
+              </div>    
+              <div class="d-flex border-bottom mb-3 mt-2 ">    
+                <h2 class="display-6 fw-bold mb-2 mt-2 green pe-3">453</h2>    
+                <div class="d-flex justify-content-center align-items-center">    
+                  <p><strong>Hours Of Support</strong> aut commodi quaerat</p>    
+                </div>
+              </div>    
+            </div>    
+          </div>    
+        </div>    
+      </div>
+<!--======================number section starts====================-->
+
+<!--======================call to action section starts===================-->
+<div class="container p-0  mt-5 mb-5">
+    <div class="card bgclr">    
+      <img src="/public/images/cta-bg.jpg" class="card-img imgcover rounded-4   p-0" alt="...">
+    
+      <div class="card-img-overlay  bg-dark bg-opacity-50 d-flex justify-content-center align-items-center flex-column">    
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                                class=" card-img-overlay text-center text-success fs-1 d-flex justify-content-center mt-lg-5 pt-lg-5"><i
+                                    class="fa-solid fa-circle-play fa-beat-fade"></i></a>   
+          <h3 class="card-title text-center text-white my-3">Call To Action</h3>
+          <p class="card-text mx-5 text-center text-white"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="btn btnclass btn-shadow-5 ctsbtn text-white rounded-5  fs-5 py-2 px-5  mt-3 border-white border-2" type="submit">Call To Action</button>
+        </div>
+    </div>
+</div>     
+<!--======================call to action section starts===================-->
+
+<!--================our service==============-->
+<div class="bg-light">
+    <div class="container-lg container-fluid mt-5">
+        <div class="d-flex justify-content-center align-items-center flex-column text-center">
+            <h2 class="mt-5">Our <span class="about-border pb-3">Ser</span>vices</h2>
+            <p class="text-black-50 mt-4 pb-3">Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+        </div>
+        <div class="row justify-content-center mt-4 ">
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-solid fa-chart-line cardfont1 fs-4 " style="color: #000000;"></i>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold "><span class="border-bottom border-4 pb-2 ">Nesciunt Mete</span></h4>
+                        <p class="card-text mt-4">Some quick example text to build on the card title and make up the bulk of the card's content the bulk of the card's content.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-solid fa-signal cardfont1  fs-6" style="color: #000000;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold"><span class="border-bottom border-4 pb-2"> Commodi</span></h4>
+                        <p class="card-text mt-4">Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-solid fa-tv cardfont1" style="color: #000000;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold"><span class="border-bottom border-4 pb-2">Ledo Markt</span></h4>
+                        <p class="card-text mt-4">Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-regular fa-square cardfont1" style="color: #000000;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold"> <span class="border-bottom border-4 pb-2">Asperiores Commodit</span></h4>
+                        <p class="card-text mt-4">Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-regular fa-calendar cardfont1" style="color: #000000;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold"><span class="border-bottom border-4 pb-2">Velit Doloremque</span></h4>
+                        <p class="card-text mt-4">Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-lg-4 col-6 mb-4 me-md-3 border border-0" style="width: 22rem;">
+                <div class="card-head mx-2">
+                    <div class="ps-4 mt-5">
+                        <i class="fa-regular fa-message cardfont1" style="color: #000000;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title mt-3 mb-3 fw-bold"><span class="border-bottom border-4 pb-2">Dolori Architecto</span></h4>
+                        <p class="card-text mt-4" >Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a href="#" class="nav-link green mb-5">Read more <i class="fa-solid fa-arrow-right" style="color: rgb(0 131 116);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--========================our service ends===============-->
+
+<!--=================Testimonial starts=======================-->
+<div class="d-none d-lg-block">    
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column text-center mt-5">
+            <h2 class="mb-4">Testi<span class="about-border pb-3">mo</span>nials</h2>
+            <p class="text-black-50 mt-3 mb-4">Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="card col-12 mb-5 me-5  p-3 shadow border-0 rounded-3" style="width:20rem;">
+                            <div class="card-head mx-2">
+                                <div class="d-flex">
+                                    <img src="/public/images/testimonials/testimonials-1.jpg" class="w-25 rounded-circle " alt="">  
+                                    <div class="card-title ps-3">
+                                        <h4>Saul Goodman</h4>
+                                        <h6 class="card-subtitle text-black-50">Ceo &amp; Founder</h6>
+                                        <div >
+                                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fst-italic">
+                                        <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card col-lg-4 col-6 mb-5 me-5 shadow border-0 rounded-3 p-3" style="width:20rem;">
+                            <div class="card-head mx-2">
+                                <div class="d-flex">
+                                    <img src="/public/images/testimonials/testimonials-2.jpg" class="w-25 rounded-circle" alt="">  
+                                    <div class="card-title ps-3">
+                                        <h4>Sara Wilsson</h4>
+                                        <h6 class="card-subtitle text-black-50">Designer</h6>
+                                        <div >
+                                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fst-italic">
+                                        <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.us at semper.
+                                        <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="card col-lg-4 col-6 mb-5 me-5 shadow border-0 rounded-3 p-3" style="width: 20rem;">
+                            <div class="card-head mx-2">
+                                <div class="d-flex">
+                                    <img src="/public/images/testimonials/testimonials-3.jpg" class="w-25 rounded-circle" alt="">  
+                                    <div class="card-title ps-3">
+                                        <h4>Jena Karlis</h4>
+                                        <h6 class="card-subtitle text-black-50">Store Owner</h6>
+                                        <div >
+                                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fst-italic">
+                                        <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                        <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                    </p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                            <div class="card-head mx-2">
+                                <div class="d-flex">
+                                    <img src="/public/images/testimonials/testimonials-2.jpg" class="w-25 rounded-circle" alt="">  
+                                    <div class="card-title ps-3">
+                                        <h4>Sara Wilsson</h4>
+                                        <h6 class="card-subtitle text-black-50">Designer</h6>
+                                        <div >
+                                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fst-italic">
+                                        <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.us at semper.
+                                        <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width:20rem;">
+                                <div class="card-head mx-2">    
+                                    <div class="d-flex">    
+                                        <img src="/public/images/testimonials/testimonials-1.jpg" class="w-25 rounded-circle" alt="">      
+                                        <div class="card-title ps-3">    
+                                            <h4>Saul Goodman</h4>    
+                                            <h6 class="card-subtitle text-black-50">Ceo &amp; Founder</h6>    
+                                            <div >    
+                                                <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>    
+                                            </div>    
+                                        </div>    
+                                    </div>    
+                                    <div class="card-body">    
+                                        <p class="fst-italic">    
+                                            <i class="fa-solid fa-quote-left" style="color: #008374;"></i>    
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.    
+                                            <i class="fa-solid fa-quote-right" style="color: #008374;"></i>    
+                                        </p>    
+                                    </div>    
+                                </div>    
+                                </div> 
+                        <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                            <div class="card-head mx-2">
+                                <div class="d-flex">
+                                    <img src="/public/images/testimonials/testimonials-3.jpg" class="w-25 rounded-circle" alt="">  
+                                    <div class="card-title ps-3">
+                                        <h4>Jena Karlis</h4>
+                                        <h6 class="card-subtitle text-black-50">Store Owner</h6>
+                                        <div >
+                                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="fst-italic">
+                                        <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                        <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                    </p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-3.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Jena Karlis</h4>
+                                    <h6 class="card-subtitle text-black-50">Store Owner</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-4.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Matt Brandon</h4>
+                                    <h6 class="card-subtitle text-black-50">Freelancer</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-5.jpg" class="w-25 rounded-circle" alt=""> 
+                                <div class="card-title ps-3">
+                                    <h4>John Larson</h4>
+                                    <h6 class="card-subtitle text-black-50">Entrepreneur</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-4.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Matt Brandon</h4>
+                                    <h6 class="card-subtitle text-black-50">Freelancer</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-5.jpg" class="w-25 rounded-circle" alt=""> 
+                                <div class="card-title ps-3">
+                                    <h4>John Larson</h4>
+                                    <h6 class="card-subtitle text-black-50">Entrepreneur</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-1.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Saul Goodman</h4>
+                                    <h6 class="card-subtitle text-black-50">Ceo &amp; Founder</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-5.jpg" class="w-25 rounded-circle" alt=""> 
+                                <div class="card-title ps-3">
+                                    <h4>John Larson</h4>
+                                    <h6 class="card-subtitle text-black-50">Entrepreneur</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-5 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-1.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Saul Goodman</h4>
+                                    <h6 class="card-subtitle text-black-50">Ceo &amp; Founder</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="card col-lg-4 col-6 mb-5 me-lg-3 p-3 shadow border-0 rounded-3" style="width: 20rem;">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-2.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title ps-3">
+                                    <h4>Sara Wilsson</h4>
+                                    <h6 class="card-subtitle text-black-50">Designer</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fst-italic">
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.us at semper.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators pt-5 mx-5">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+    
+            <button type="button" class="bg-success" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+            <button type="button" class="bg-success" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+            <button type="button" class="bg-success" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    
+            <button type="button" class="bg-success" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>    
+          </div>
+    </div>
+    </div>
+</div>
+
+<div class="d-lg-none d-block">    
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column text-center">
+            <h2>Testimonials</h2>
+            <p class="text-black-50">Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+        </div>
+        <div id="carouselMobileIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card col-12 mb-4 w-100 shadow border-0 rounded-3" >
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-1.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title">
+                                    <h4>Saul Goodman</h4>
+                                    <h6 class="card-subtitle text-black-50">Ceo &amp; Founder</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card col-lg-4 col-6 mb-4 me-lg-3 shadow border-0 rounded-3  w-100">
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-2.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title">
+                                    <h4>Sara Wilsson</h4>
+                                    <h6 class="card-subtitle text-black-50">Designer</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.us at semper.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="carousel-item">    
+                    <div class="card col-lg-4 col-6 mb-4 me-lg-3 shadow border-0 rounded-3 w-100" >    
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-3.jpg" class="w-25 rounded-circle" alt=""> 
+                                <div class="card-title">
+                                    <h4>Jena Karlis</h4>
+                                    <h6 class="card-subtitle text-black-50">Store Owner</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>   
+                        </div>
+                    </div>    
+                </div>  
+                <div class="carousel-item">    
+                    <div class="card col-lg-4 col-6 mb-4 me-lg-3 shadow border-0 rounded-3 w-100" >    
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-4.jpg" class="w-25 rounded-circle" alt=""> 
+                                <div class="card-title">
+                                    <h4>Matt Brandon</h4>
+                                    <h6 class="card-subtitle text-black-50">Freelancer</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>   
+                        </div>
+                    </div>    
+                </div>    
+                <div class="carousel-item">    
+                    <div class="card col-lg-4 col-6 mb-4 me-lg-3 shadow border-0 rounded-3 w-100" >
+                        <div class="card-head mx-2">
+                            <div class="d-flex">
+                                <img src="/public/images/testimonials/testimonials-5.jpg" class="w-25 rounded-circle" alt="">  
+                                <div class="card-title">
+                                    <h4>John Larson</h4>
+                                    <h6 class="card-subtitle text-black-50">Entrepreneur</h6>
+                                    <div >
+                                        <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <i class="fa-solid fa-quote-left" style="color: #008374;"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                                    <i class="fa-solid fa-quote-right" style="color: #008374;"></i>
+                                </p>
+                            </div>  
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="carousel-indicators green ">
+                <button type="button" data-bs-target="#carouselMobileIndicators" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+    
+                <button type="button" class="bg-primary" data-bs-target="#carouselMobileIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+                <button type="button" class="bg-primary" data-bs-target="#carouselMobileIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+                <button type="button" class="bg-primary" data-bs-target="#carouselMobileIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    
+                <button type="button" class="bg-primary" data-bs-target="#carouselMobileIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>    
+              </div>
+        </div>     
+    </div>
+</div>
+<!--=======================Testimonial Ends===============-->
+
+<!--============== portfolio starts=============-->
+<div class="bg-light ">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mx-5 pt-5 mb-5">Po<span class="about-border pb-3">rtfo</span>lio</h2>
+            <p class="my-4">Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+        </div>
+        <div class=" mt-5" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+            <div class=" d-flex justify-content-center">                
+                <ul class="navbar-nav float-end d-flex flex-row fs-5 ">
+                    <li class="nav-item me-3 ">
+                        <a class="nav-link active dropdownclr fw-medium" aria-current="page"
+                            href="#">All</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active  fw-medium" aria-current="page"
+                            href="#">App</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active fw-medium" aria-current="page"
+                            href="#">Product
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active  fw-medium" aria-current="page"
+                            href="#">Branding
+                        </a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active  fw-medium" aria-current="page"
+                            href="#">Books
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>      
+        <div class="row justify-content-center mt-3  ">
+            <div class="card col-12 col-md-4 portfolio mt-3 mt-3 mt-md-0 me-md-3  " >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/app-1.jpg" class="card-img-top " alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">App 1</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>            
+            <div class="card col-12 col-md-4 portfolio mt-3 mt-md-0 me-md-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/product-1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio  mt-3 mt-md-0" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/branding-1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Branding 1</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3  me-md-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/books-1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Books 1</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3  me-md-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/app-2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">App 2</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/product-2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3  me-md-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/branding-2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Branding 2</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3  me-md-3" >
+                <div class="zoom-img">
+                    <img src="/public/images/portfolio/books-2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Book 2</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3" >
+            <div class="zoom-img">
+            <img src="/public/images/portfolio/app-3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">App 3</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio  mt-3  me-md-3" >
+            <div class="zoom-img">
+            <img src="/public/images/portfolio/product-3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3  me-md-3" >
+            <div class="zoom-img">
+            <img src="/public/images/portfolio/branding-3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Branding 3</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            </div>
+            <div class="card col-12 col-md-4 portfolio mt-3">
+            <div class="zoom-img">
+            <img src="/public/images/portfolio/books-3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Books 3</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============portfolio ends==================-->
+
+<!--=====================our team starts===============-->
+<div class="">
+    <div class="container" >
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-center p-3 mt-5">Ou<span class="about-border pb-3">r Te</span>am</h2>
+            <p class="my-4">Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+        </div>
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-3 col-12 d-flex justify-content-center ">
+                <div class="p-3 m-2 text-center shadow rounded-4">
+                    <img src="/public/images/team/team-1.jpg" class="img-fluid rounded-3" alt="">
+                    <h4>Walter White</h4>
+                    <p class="text-black-50 fst-italic">Web Development</p>
+                    <div>
+                        <ul class=" d-flex align-items-center justify-content-around list-unstyled">
+                            <li class="nav-item ">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-twitter teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fa-brands fa-facebook teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-instagram teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-linkedin teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 d-flex justify-content-center ">
+                <div class="p-3 m-2 text-center shadow rounded-4">
+                    <img src="/public/images/team/team-2.jpg" class="img-fluid rounded-3" alt="">
+                    <h4>Sarah Jhinson</h4>
+                    <p class="text-black-50 fst-italic">Marketing</p>
+                    <div>
+                        <ul class=" d-flex align-items-center justify-content-around list-unstyled">
+                            <li class="nav-item ">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-twitter teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fa-brands fa-facebook teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-instagram teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-linkedin teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 d-flex justify-content-center">
+                <div class="p-3 m-2 text-center shadow rounded-4">
+                    <img src="/public/images/team/team-3.jpg" class="img-fluid rounded-3" alt="">
+                    <h4>William Anderson</h4>
+                    <p class="text-black-50 fst-italic">Content</p>
+                    <div>
+                        <ul class=" d-flex align-items-center justify-content-around list-unstyled">
+                            <li class="nav-item ">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-twitter teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fa-brands fa-facebook teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-instagram teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-linkedin teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 d-flex justify-content-center">
+                <div class="p-3 text-center shadow rounded-4 ">
+                    <img src="/public/images/team/team-4.jpg" class="img-fluid rounded-3" alt="">
+                    <h4>Amanda Jepson</h4>
+                    <p class="text-black-50 fst-italic">Accountant</p>
+                    <div>
+                        <ul class=" d-flex align-items-center justify-content-around list-unstyled">
+                            <li class="nav-item ">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-twitter teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fa-brands fa-facebook teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-instagram teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-dark-50  " href="#">
+                                    <i class="fab fa-linkedin teami m-1" style="color: #bbbbbb;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--======our team ends======================-->
+
+ <!-- ======= Pricing Section ======= -->
+ <div class="bg-light py-2">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-center p-3 mt-5">Pr<span class="about-border pb-3">icin</span>g</h2>
+            <p class="text-dark-50 mt-4">Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <div class="card col-12 col-md-4 text-center rounded-4 p-3 py-5 " style="width: 22em;">
+
+                <div class="card-head ">
+
+                    <h5>Free Plan</h5>
+
+                    <div class="d-flex justify-content-center align-items-center my-4">
+
+                        <div class="p-3 rounded-circle cardbg">
+
+                            <i class="fa-solid fa-cube pricingicon" style="color: #ffffff;"></i>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    <p><span class="fs-1 dot fw-bold"><sup >$</sup>0</span><span> / month</span><p>
+
+                </div>
+
+                <div class="card-body text-start">
+
+                    <ul class="list-unstyled text-dark-50">
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i>  adipiscing vitae proin</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nec feugiat nisl pretium</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nulla at volutpat diam uteera</p></li>
+
+                        <li><p><i class="fa-solid fa-xmark" style="color:#008374;"></i> <s>Pharetra massa massa ultricies</s></p></li>
+
+                        <li><p><i class="fa-solid fa-xmark text-dark-50" style="color:#008374;"></i> <s class="text-dark-50">Massa ultricies mi quis hendrerit</s></p></li>
+
+                    </ul>
+
+                    <div class="text-center mt-5 price-hover bg-white"><a href="#" class="btn green fw-bold border rounded-4 px-5 fs-6">Buy Now</a></div>
+
+                </div>
+
+            </div>
+            <div class="card col-12 col-md-4 text-center borderbusiness  rounded-4 p-3 py-5" style="width: 24em;">
+
+                <div class="card-head ">
+
+                    <h3>Business Plan</h3>
+
+                    <div class="d-flex justify-content-center align-items-center my-4">
+
+                        <div class="p-4 rounded-circle cardbg">
+
+                            <i class="fa-solid fa-plane-up pricingiconmid" style="color: #ffffff;"></i>
+
+                        </div>
+
+                    </div>
+
+                    <p><span class="display-5 dot  fw-bold"><sup>$</sup>29</span><span> / month</span></p>
+
+                </div>
+
+                <div class="card-body text-start">
+
+                    <ul class="list-unstyled text-dark-50 fs-5">
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i>  Quam adipiscing vitae proin</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nec feugiat nisl pretium</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nulla at volutpat diam uteera</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i>Pharetra massa massa ultricies</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Massa ultricies mi quis hendrerit</p></li>
+
+                    </ul>
+
+                    <div class="text-center mt-5 price-hover bg-white"><a href="#" class="btn green fw-bold border rounded-4 px-5 fs-6">Buy Now</a></div>
+
+                </div>
+
+            </div>
+            <div class="card col-12 col-md-4 text-center rounded-4  py-5 " style="width: 22em;">
+
+                <div class="card-head ">
+
+                    <h5>Developer Plan</h5>
+
+                    <div class="d-flex justify-content-center align-items-center my-4">
+
+                        <div class="p-3 rounded-circle cardbg">
+
+                            <i class="fa-regular fa-paper-plane pricingicon" style="color: #ffffff;"></i>
+
+                        </div>
+
+                    </div>
+
+                    <h4><span class="fs-1 dot fw-bold"><sup>$</sup>49</span><span> / month</span></h4>
+
+                </div>
+
+                <div class="card-body text-start">
+
+                    <ul class="list-unstyled text-dark-50">
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Quam adipiscing vitae proin</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nec feugiat nisl pretium</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Nulla at volutpat diam uteera</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i>Pharetra massa massa ultricies</p></li>
+
+                        <li><p><i class="fa-solid fa-check" style="color:#008374;"></i> Massa ultricies mi quis hendrerit</p></li>
+
+                    </ul>
+
+                    <div class="text-center mt-5 price-hover bg-white"><a href="#" class="btn green  fw-bold border rounded-4 px-5 fs-6">Buy Now</a></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><!-- End Pricing Section -->
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <div class="m-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 p-lg-5 col">
+                <div class="">
+                    <h3 class="display-6 fw-light">Frequently Asked <span class="fw-bold">Questions</span></h3>
+                    <p class="text-black-50 my-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+                </div>
+            </div> 
+
+            <div class="col-lg-8 col">
+                <div class="accordion bg-none border-0 bs-accordion-active-bg " id="accordionExample">
+                    <div class="accordion-item border-0 shadow my-lg-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faqaction" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex fw-semibold fs-5"><span class="faq pe-2 green">1.</span><p>Non consectetur a erat nam at lectus urna duis?</p>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse collapse px-4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-item my-lg-4 border-0 shadow">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faqaction" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex fw-semibold fs-5"><span class="faq green pe-2">2.</span><p>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</p></div>
+                            </button>
+                        </h2>
+
+                        <div id="collapseTwo" class="accordion-collapse collapse px-4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="accordion-item my-lg-4 border-0 shadow">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faqaction" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex fw-semibold fs-5"><span class="faq green pe-2">3.</span><p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</p></div>
+                            </button>
+                        </h2>
+
+                        <div id="collapseThree" class="accordion-collapse collapse px-4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="accordion-item my-lg-4 border-0 shadow">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faqaction" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex fw-semibold fs-5"><span class="faq green pe-2">4.</span><p>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</p></div>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse px-4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-lg-4 border-0 shadow">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faqaction" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex fw-semibold fs-5"><span class="faq green pe-2">5.</span><p>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</p></div>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse px-4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- frequently ends -->
+
+ <!-- ======= Recent Blog Posts Section starts ======= -->
+ <div class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-center p-3 mt-5">Recent <span class="about-border pb-3">Blo</span>g Posts</h2>
+        <p class="text-black-50 mt-4">Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
+      </div>
+
+      <div class="row mt-5">
+        <div class="card col-lg-4 col-12 p-0 me-4 mb-4 rounded-4" style="width: 22rem;">
+          <img src="/public/images/blog/blog-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body mx-3">
+            <p class="card-text text-black-50">Politics</p>
+            <a href="#" class="nav-link fs-4 fw-bold">Dolorum optio tempore voluptas dignissimos</a>      
+            <div class="d-flex align-items-center w-75 mt-3">  
+              <img src="/public/images/blog/blog-author.jpg" class="w-25 rounded-circle" alt="">  
+              <div class=" ps-4 blogfont">
+                <p class="fw-semibold">Maria Doe</p>
+                <p>Jan 1, 2022</p>
+              </div>    
+            </div>                 
+          </div>               
+        </div>
+
+        <div class="card col-lg-4 col-12 p-0 me-4 mb-4  rounded-4" style="width: 22rem;">
+          <img src="/public/images/blog/blog-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body mx-3">
+            <p class="card-text text-black-50">Sports</p>
+            <a href="#" class="nav-link fs-4 fw-bold">Nisi magni odit consequatur autem nulla dolorem</a>      
+            <div class="d-flex align-items-center w-75 mt-3">  
+              <img src="/public/images/blog/blog-author-2.jpg" class="w-25 rounded-circle" alt="">  
+              <div class=" ps-4 blogfont">
+                <p class="fw-semibold">Allisa Mayer</p>
+                <p>Jun 5, 2022</p>
+              </div>    
+            </div>                 
+          </div>               
+        </div>
+
+        <div class="card col-lg-4 col-12 p-0 me-4 mb-4 rounded-4" style="width: 22rem;">
+          <img src="/public/images/blog/blog-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body mx-3">
+            <p class="card-text text-black-50">Entertainment</p>
+            <a href="#" class="nav-link fs-4 fw-bold">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>      
+            <div class="d-flex align-items-center w-75 mt-3">  
+              <img src="/public/images/blog/blog-author-3.jpg" class="w-25 rounded-circle" alt="">  
+              <div class=" ps-4 blogfont">
+                <p class="fw-semibold">Mark Dower</p>
+                <p>Jun 22, 2022</p>
+              </div>    
+            </div>                 
+          </div>               
+        </div> 
+
+      </div>
+    </div>
+  </div>
+  <!--=================Recent Blog Posts ends -->
+
+<!--=====================Contact starts===============-->
+    <div class="container mb-5 " data-aos="fade-up">
+      <div class="section-header text-center mt-5">
+        <h2 class="mb-4">C<span class="about-border pb-3">onta</span>ct</h2>
+        <p class="m-2 my-4">Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+      </div>
+      <div class="row  text-white shadow-lg rounded-4 mt-5">
+        <div class="col-lg-4 p-0 ">
+          <div class=" header p-3 d-flex flex-column rounded-start-4 align-items-center justify-content-center">
+            <div class="info-item d-flex mt-2 cardbg p-1 rounded-3 w-100 ">
+                <div class=" roundcirc cirlclr rounded-circle ms-2 mt-2 fs-5 ps-1" >
+                <i class="fa-solid fa-location-dot p-3 mb-1 me-2" style="color: #ffffff;"></i>
+            </div>
+              <div class="ms-2">
+                <h4 class="mt-2" >Location:</h4>
+                <p class="fs-6">A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="info-item d-flex mt-2 cardbg p-1 rounded-3 w-100">
+                <div class=" roundcirc cirlclr rounded-circle ms-2 mt-2 fs-5 ps-1" >
+                    <i class="fa-regular fa-envelope p-2 mt-1 ms-1" style="color: #ffffff;"></i>
+                </div>
+                <div class="ms-2">
+                    <h4 class="mt-2" >Email:</h4>
+                    <p class="fs-6">info@example.com</p>
+                </div>
+            </div>
+            <div class="info-item d-flex mt-2 cardbg p-1 rounded-3 w-100">
+                <div class=" roundcirc cirlclr rounded-circle ms-2 mt-2 fs-5 ps-1" >
+                    <i class="fa-solid fa-mobile-screen-button p-2 mt-1 ms-1" style="color: #ffffff;"></i>
+            </div>
+              <div class="ms-2">
+                <h4 class="mt-2" >Call:</h4>
+                <p class="fs-6">+1 5589 55488 55</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex mt-2 cardbg p-1 rounded-3 w-100">
+                <div class=" roundcirc cirlclr rounded-circle ms-2 mt-2 fs-5 ps-1" >
+                    <i class="fa-regular fa-clock p-2 mt-1 ms-1" style="color: #ffffff;"></i>
+            </div>
+              <div class="ms-2">
+                <h4 class="mt-2" >Open Hours:</h4>
+                <p class="fs-6">Mon-Sat: 11AM - 23PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 p-4 ">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control rounded-0" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control rounded-0" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control rounded-0" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control rounded-0" name="message" rows="7" placeholder="Message" required></textarea>
+            </div>
+           
+            <div class="text-center "><button  class="cardbg border-0 rounded-5 mt-4 p-3 ps-5 pe-5 fs-5 text-white" type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+<!--=======================contact ends================-->
+
+<!--==================footer section starts================-->
+<footer id="footer" class="header text-white ">
+    <div class="container">
+      <div class="row mt-5 gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center text-decoration-none text-white fs-3 fw-bold">
+            <span>Impact</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <ul class=" d-flex align-items-center justify-content-around list-unstyled">
+                <li class="nav-item pe-3 ">
+                    <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-light footicon " href="#">
+                        <i class="fab fa-twitter teami m-1" style="color: #bbbbbb;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item pe-3">
+                    <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-light footicon " href="#">
+                        <i class="fa-brands fa-facebook teami m-1" style="color: #bbbbbb;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item pe-3">
+                    <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-light footicon " href="#">
+                        <i class="fab fa-instagram teami m-1" style="color: #bbbbbb;"></i>
+                    </a>
+                </li>
+                <li class="nav-item pe-3">
+                    <a class="nav-link d-flex align-items-center justify-content-center p-1 rounded-circle border border-light footicon " href="#">
+                        <i class="fab fa-linkedin teami m-1" style="color: #bbbbbb;"></i>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 ">
+          <h6 class="fw-bold">Useful Links</h6>
+          <ul class="list-unstyled ">
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Home</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">About us</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Services</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Terms of service</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links ">
+          <h6 class="fw-bold ">Our Services</h6>
+          <ul class="list-unstyled ">
+            <li class="text-decoration-none text-white py-1"><a class="text-decoration-none text-white-50" href="#">Web Design</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Web Development</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Product Management</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Marketing</a></li>
+            <li class="py-1"><a href="#" class="text-decoration-none text-white-50">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h6 class="fw-bold mb-3">Contact Us</h6>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="copyright text-center">
+        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits text-center footerfont pb-5">       
+        Designed by <a class="text-decoration-none text-white footerfont " href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+<!--=================footer section ends================-->
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
